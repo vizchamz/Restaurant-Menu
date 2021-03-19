@@ -1,0 +1,59 @@
+body {
+    background-color: whitesmoke;
+    text-align: center
+}
+#heading {
+    margin-top: 6%;
+}
+.container {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+    grid-gap: 10px;
+    grid-auto-rows: minmax(80px, auto);
+    background-color: white;
+    width: 45%;
+    background-position: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-bottom: 0px;
+}
+#menu {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 10px;
+    width: 100%;
+}
+#selection {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: cornflowerblue;
+    padding: 10px;
+    color: white;
+    width: 100%;
+}
+#extras {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: slategray;
+    padding: 10px;
+    color: white;
+    width: 100%
+}
+#basmati {
+    grid-column: 1;
+    grid-row: 1;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.10);
+    border: 1px solid transparent;
+    padding: 5px;
+    border-color: aquamarine;
+    width: 100%;
+}
+#menu > span {
+    font-size: 20px
+}
+#num1, #num2, #num3, #num4, #num5, #num6 {
+    background-color: white;
+    color: black;
+    padding: 6px
+}

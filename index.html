@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Flagship Restaurant</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <link href="css/styles.css" rel="stylesheet"/>
+    </head>
+    <body>
+        <div>
+            <h1 id="heading">Flagship Restaurant</h1>
+            <br/>
+            <div class="container">
+                <div style="float:left">
+                    <img src="img/istockphoto-541990940-170667a.jpg" alt="Basmati Rice & Curry" id="basmati"/>
+                </div>
+                <div style="float:right" id="menu">
+                    <h2>Menu</h2>
+                    <br/>
+                    <span>Basmati White Rice</span>
+                    <br/>
+                    <span>Brinjal Pahi</span>
+                    <br/>
+                    <span>Vegetable Salad</span>
+                    <br/>
+                    <span>Potato Curry</span>
+                    <br/>
+                    <span>Papadam</span>
+                </div>
+                <div style="float:left" id="extras">
+                    <h3>
+                        <b>Extras</b>
+                    </h3>
+                    <div>
+                    <span>Yogurt</span>
+                    <input type=button value="increment" onclick="button1()" class="btn btn-primary" style="margin-left: 60px"/>&nbsp;
+                    <span id="num1"></span>&nbsp;
+                    <input type=button value="decrement" onclick="button2()" class="btn btn-danger"/>
+                    <br/>
+                    <span>Pudding</span>
+                    <input type=button value="increment" onclick="button3()" class="btn btn-primary" style="margin-left: 48px"/>&nbsp;
+                    <span id="num2"></span>&nbsp;
+                    <input type=button value="decrement" onclick="button4()" class="btn btn-danger"/>
+                    <br/>
+                    <span>500ml Water</span>
+                    <input type=button value="increment" onclick="button5()" class="btn btn-primary" style="margin-left: 18px"/>&nbsp;
+                    <span id="num3"></span>&nbsp;
+                    <input type=button value="decrement" onclick="button6()" class="btn btn-danger"/>
+                    </div>
+                </div>
+                <div style="float:right" id="selection">
+                    <h3>
+                        <b>Selection</b>
+                    </h3>
+                    <div>
+                    <span>Chicken</span>
+                    <input type=button value="increment" onclick="button7()" class="btn btn-primary" style="margin-left: 50px"/>&nbsp;
+                    <span id="num4"></span>&nbsp;
+                    <input type=button value="decrement" onclick="button8()" class="btn btn-danger"/>
+                    <br/>
+                    <span>Fish</span>
+                    <input type=button value="increment" onclick="button9()" class="btn btn-primary" style="margin-left: 78px"/>&nbsp;
+                    <span id="num5"></span>&nbsp;
+                    <input type=button value="decrement" onclick="button10()" class="btn btn-danger"/>
+                    <br/>
+                    <span>Pork</span>
+                    <input type=button value="increment" onclick="button11()" class="btn btn-primary" style="margin-left: 74px"/>&nbsp;
+                    <span id="num6"></span>&nbsp;
+                    <input type=button value="decrement" onclick="button12()" class="btn btn-danger"/>
+                    </div>
+                </div>
+                <div style="float:left">
+                    <h1 style="float:left">
+                        <b>Total: LKR <span id="price"></span></b>
+                    </h1>
+                </div>
+                <div style="float:right">
+                    <input type="button" class="btn btn-success" value="Order Now" id="orderNow" name="orderNow" style="float:right" onclick="orderConfirmed()"/>
+                </div>
+            </div>
+            <br/>
+            <div>
+                <img src="img/free-shipping-icon-vector-10.jpg" alt="Free Shipping" id="shipping" style="width: 2.5%"/>
+                <img src="img/kisspng-credit-card-debit-card-american-express-mastercard-speed-icon-5b3d03c290f187.5404792515307253145937.png" alt="Payment Methods" id="payment" style="width: 15%"/>
+            </div>
+        </div>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
