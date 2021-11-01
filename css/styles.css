@@ -2,6 +2,9 @@ body {
     background-color: whitesmoke;
     text-align: center
 }
+.body-container {
+    margin-top: -40px;
+}
 #heading {
     margin-top: 6%;
 }
@@ -55,5 +58,88 @@ body {
 #num1, #num2, #num3, #num4, #num5, #num6 {
     background-color: white;
     color: black;
-    padding: 6px
+    padding: 5px 12px;
+    float: left;
+    margin-top: 7px;
+    border-radius: 3px;
+}
+.btn-primary {
+    margin: 5px;
+    float: left;
+}
+.btn-danger {
+    margin: 5px;
+    float: left;
+}
+#shipping {
+    width: 48px;
+}
+#payment {
+    width: 280px;
+}
+.price-section b{
+    float: left;
+    margin-top: 10px;
+}
+#orderNow {
+    float: right;
+    margin-top: 10px;
+}
+.sub-section1 {
+    float: left;
+    margin-right: 80px;
+}
+#yogurt{
+    float: left;
+    margin-left: 70px;
+    margin-right: 64px;
+    margin-top: 8px;
+}
+.sub-section2 {
+    float: left;
+    margin-right: 80px;
+}
+#pudding{
+    float: left;
+    margin-left: 70px;
+    margin-right: 53px;
+    margin-top: 8px;
+}
+.sub-section3 {
+    float: left;
+}
+#water{
+    float: left;
+    margin-left: 70px;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+.sub-section4 {
+    float: left;
+    margin-right: 80px;
+}
+#chicken{
+    float: left;
+    margin-left: 70px;
+    margin-right: 50px;
+    margin-top: 8px;
+}
+.sub-section5 {
+    float: left;
+    margin-right: 80px;
+}
+#fish{
+    float: left;
+    margin-left: 70px;
+    margin-right: 78px;
+    margin-top: 8px;
+}
+.sub-section6 {
+    float: left;
+}
+#pork{
+    float: left;
+    margin-left: 70px;
+    margin-right: 74px;
+    margin-top: 8px;
 }

@@ -1,62 +1,141 @@
-var x = 0;
-            
-document.getElementById("num1").innerHTML = x;
 function button1() {
-    document.getElementById("num1").innerHTML = ++x;
+    let price = document.getElementById("price").innerHTML;
+    let priceInt = parseInt(price);
+    let value = document.getElementById("num1").innerHTML;
+    let newValue = parseInt(value) + 1;
+    document.getElementById("num1").innerHTML = newValue;
+    document.getElementById("price").innerHTML = priceInt + yogurt;
 }
+
 function button2() {
-    document.getElementById("num1").innerHTML = --x;
+    let price = document.getElementById("price").innerHTML;
+    let priceInt = parseInt(price);
+    let value = document.getElementById("num1").innerHTML;
+    if (valueValidation(parseInt(value))) {
+        let newValue = parseInt(value) - 1;
+        document.getElementById("num1").innerHTML = newValue;
+        document.getElementById("price").innerHTML = priceInt - yogurt;
+    }
 }
-document.getElementById("num2").innerHTML = x;
+
 function button3() {
-    document.getElementById("num2").innerHTML = ++x;
+    let price = document.getElementById("price").innerHTML;
+    let priceInt = parseInt(price);
+    let value = document.getElementById("num2").innerHTML;
+    let newValue = parseInt(value) + 1;
+    document.getElementById("num2").innerHTML = newValue;
+    document.getElementById("price").innerHTML = priceInt + pudding;
 }
+
 function button4() {
-    document.getElementById("num2").innerHTML = --x;
+    let price = document.getElementById("price").innerHTML;
+    let priceInt = parseInt(price);
+    let value = document.getElementById("num2").innerHTML;
+    if (valueValidation(parseInt(value))) {
+        let newValue = parseInt(value) - 1;
+        document.getElementById("num2").innerHTML = newValue;
+        document.getElementById("price").innerHTML = priceInt - pudding;
+    }
 }
-document.getElementById("num3").innerHTML = x;
+
 function button5() {
-    document.getElementById("num3").innerHTML = ++x;
+    let price = document.getElementById("price").innerHTML;
+    let priceInt = parseInt(price);
+    let value = document.getElementById("num3").innerHTML;
+    let newValue = parseInt(value) + 1;
+    document.getElementById("num3").innerHTML = newValue;
+    document.getElementById("price").innerHTML = priceInt + water;
 }
+
 function button6() {
-    document.getElementById("num3").innerHTML = --x;
+    let price = document.getElementById("price").innerHTML;
+    let priceInt = parseInt(price);
+    let value = document.getElementById("num3").innerHTML;
+    if (valueValidation(parseInt(value))) {
+        let newValue = parseInt(value) - 1;
+        document.getElementById("num3").innerHTML = newValue;
+        document.getElementById("price").innerHTML = priceInt - water;
+    }
 }
-document.getElementById("num4").innerHTML = x;
+
 function button7() {
-    document.getElementById("num4").innerHTML = ++x;
+    let price = document.getElementById("price").innerHTML;
+    let priceInt = parseInt(price);
+    let value = document.getElementById("num4").innerHTML;
+    let newValue = parseInt(value) + 1;
+    document.getElementById("num4").innerHTML = newValue;
+    document.getElementById("price").innerHTML = priceInt + chicken;
 }
+
 function button8() {
-    document.getElementById("num4").innerHTML = --x;
+    let price = document.getElementById("price").innerHTML;
+    let priceInt = parseInt(price);
+    let value = document.getElementById("num4").innerHTML;
+    if (valueValidation(parseInt(value))) {
+        let newValue = parseInt(value) - 1;
+        document.getElementById("num4").innerHTML = newValue;
+        document.getElementById("price").innerHTML = priceInt - chicken;
+    }
 }
-document.getElementById("num5").innerHTML = x;
+
 function button9() {
-    document.getElementById("num5").innerHTML = ++x;
+    let price = document.getElementById("price").innerHTML;
+    let priceInt = parseInt(price);
+    let value = document.getElementById("num5").innerHTML;
+    let newValue = parseInt(value) + 1;
+    document.getElementById("num5").innerHTML = newValue;
+    document.getElementById("price").innerHTML = priceInt + fish;
 }
+
 function button10() {
-    document.getElementById("num5").innerHTML = --x;
+    let price = document.getElementById("price").innerHTML;
+    let priceInt = parseInt(price);
+    let value = document.getElementById("num5").innerHTML;
+    if (valueValidation(parseInt(value))) {
+        let newValue = parseInt(value) - 1;
+        document.getElementById("num5").innerHTML = newValue;
+        document.getElementById("price").innerHTML = priceInt - fish;
+    }
 }
-document.getElementById("num6").innerHTML = x;
+
 function button11() {
-    document.getElementById("num6").innerHTML = ++x;
+    let price = document.getElementById("price").innerHTML;
+    let priceInt = parseInt(price);
+    let value = document.getElementById("num6").innerHTML;
+    let newValue = parseInt(value) + 1;
+    document.getElementById("num6").innerHTML = newValue;
+    document.getElementById("price").innerHTML = priceInt + pork;
 }
+
 function button12() {
-    document.getElementById("num6").innerHTML = --x;
+    let price = document.getElementById("price").innerHTML;
+    let priceInt = parseInt(price);
+    let value = document.getElementById("num6").innerHTML;
+    if (valueValidation(parseInt(value))) {
+        let newValue = parseInt(value) - 1;
+        document.getElementById("num6").innerHTML = newValue;
+        document.getElementById("price").innerHTML = priceInt - pork;
+    }
 }
-            
-var y = 150;
-document.getElementById("price").innerHTML = y;
-            
+
 var yogurt = 40;
 var pudding = 60;
 var water = 80;
-            
+
 var chicken = 100;
 var fish = 80;
 var pork = 120;
-            
+
 function orderConfirmed() {
-    /*var span_text = document.getElementById("num1").innerText;
-    y = y + (yogurt*span_text);
-    document.getElementById("price").innerHTML = y;*/
-    alert("Total is " + y)
+    var total = document.getElementById("price").innerHTML;
+    alert("Total is " + total)
+}
+
+function valueValidation(value) {
+    if (value > 0) {
+        return true;
+    }
+    else {
+        return false;
+    }
 }
