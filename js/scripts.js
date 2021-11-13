@@ -128,7 +128,11 @@ var pork = 120;
 
 function orderConfirmed() {
     var total = document.getElementById("price").innerHTML;
-    alert("Total is " + total)
+    Swal.fire(
+        'Good job!',
+        `Total is ${total}!`,
+        'success'
+    )
 }
 
 function valueValidation(value) {

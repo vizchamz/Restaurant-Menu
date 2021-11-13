@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "sweetalert2": "^11.1.10"
+  },
+  "name": "codew-pro---restaurant-menu",
+  "description": "Restaurant Menu",
+  "version": "1.0.0",
+  "main": "index.html",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vizchamz/CodeW-Pro---Restaurant-Menu.git"
+  },
+  "author": "Visal Dharmasiri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vizchamz/CodeW-Pro---Restaurant-Menu/issues"
+  },
+  "homepage": "https://github.com/vizchamz/CodeW-Pro---Restaurant-Menu#readme"
+}

@@ -58,9 +58,9 @@ body {
 #num1, #num2, #num3, #num4, #num5, #num6 {
     background-color: white;
     color: black;
-    padding: 5px 12px;
+    padding: 6px 12px;
     float: left;
-    margin-top: 7px;
+    margin-top: 6px;
     border-radius: 3px;
 }
 .btn-primary {
@@ -102,7 +102,7 @@ body {
 #pudding{
     float: left;
     margin-left: 70px;
-    margin-right: 53px;
+    margin-right: 51px;
     margin-top: 8px;
 }
 .sub-section3 {
@@ -140,6 +140,6 @@ body {
 #pork{
     float: left;
     margin-left: 70px;
-    margin-right: 74px;
+    margin-right: 75px;
     margin-top: 8px;
 }
