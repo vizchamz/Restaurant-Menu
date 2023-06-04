@@ -128,11 +128,30 @@ var pork = 120;
 
 function orderConfirmed() {
     var total = document.getElementById("price").innerHTML;
-    Swal.fire(
-        'Good job!',
-        `Total is ${total}!`,
-        'success'
-    )
+    Swal.fire({
+        title: 'Place Order?',
+        text: `Total is ${total}!`,
+        icon: 'success',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Confirm',
+        cancelButtonText: 'Cancel'
+      }).then((result) => {
+        if (result.isConfirmed) {
+            resetValues();
+        }
+      });
+}
+
+function resetValues() {
+    document.getElementById("num1").innerHTML = 0;
+    document.getElementById("num2").innerHTML = 0;
+    document.getElementById("num3").innerHTML = 0;
+    document.getElementById("num4").innerHTML = 0;
+    document.getElementById("num5").innerHTML = 0;
+    document.getElementById("num6").innerHTML = 0;
+    document.getElementById("price").innerHTML = 150;
 }
 
 function valueValidation(value) {
