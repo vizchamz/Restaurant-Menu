@@ -1,15 +1,31 @@
 body {
-    background-color: whitesmoke;
-    text-align: center
+    text-align: center;
+    background-image: url("../img/20230604185856_[fpdl.in]_abstract-blur-restaurant_74190-5256_large.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 .body-container {
     margin-top: -40px;
 }
+
 #heading {
     margin-top: 6%;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Arial", sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    transition: text-shadow 0.3s ease;
 }
+
+#heading:hover {
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
 .container {
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 20px;
     grid-gap: 10px;
@@ -20,13 +36,21 @@ body {
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding-bottom: 0px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
 }
+
+.container:hover {
+    transform: scale(1.05);
+}
+
 #menu {
     grid-column: 2;
     grid-row: 1;
     padding: 10px;
     width: 100%;
 }
+
 #selection {
     grid-column: 2;
     grid-row: 2;
@@ -35,6 +59,7 @@ body {
     color: white;
     width: 100%;
 }
+
 #extras {
     grid-column: 1;
     grid-row: 2;
@@ -43,6 +68,7 @@ body {
     color: white;
     width: 100%
 }
+
 #basmati {
     grid-column: 1;
     grid-row: 1;
@@ -52,10 +78,17 @@ body {
     border-color: aquamarine;
     width: 100%;
 }
-#menu > span {
+
+#menu>span {
     font-size: 20px
 }
-#num1, #num2, #num3, #num4, #num5, #num6 {
+
+#num1,
+#num2,
+#num3,
+#num4,
+#num5,
+#num6 {
     background-color: white;
     color: black;
     padding: 6px 12px;
@@ -63,81 +96,99 @@ body {
     margin-top: 6px;
     border-radius: 3px;
 }
+
 .btn-primary {
     margin: 5px;
     float: left;
 }
+
 .btn-danger {
     margin: 5px;
     float: left;
 }
+
 #shipping {
     width: 48px;
 }
+
 #payment {
     width: 280px;
 }
-.price-section b{
+
+.price-section b {
     float: left;
     margin-top: 10px;
 }
+
 #orderNow {
     float: right;
     margin-top: 10px;
 }
+
 .sub-section1 {
     float: left;
     margin-right: 80px;
 }
-#yogurt{
+
+#yogurt {
     float: left;
     margin-left: 70px;
     margin-right: 64px;
     margin-top: 8px;
 }
+
 .sub-section2 {
     float: left;
     margin-right: 80px;
 }
-#pudding{
+
+#pudding {
     float: left;
     margin-left: 70px;
     margin-right: 51px;
     margin-top: 8px;
 }
+
 .sub-section3 {
     float: left;
 }
-#water{
+
+#water {
     float: left;
     margin-left: 70px;
     margin-right: 20px;
     margin-top: 8px;
 }
+
 .sub-section4 {
     float: left;
     margin-right: 80px;
 }
-#chicken{
+
+#chicken {
     float: left;
     margin-left: 70px;
     margin-right: 50px;
     margin-top: 8px;
 }
+
 .sub-section5 {
     float: left;
     margin-right: 80px;
 }
-#fish{
+
+#fish {
     float: left;
     margin-left: 70px;
     margin-right: 78px;
     margin-top: 8px;
 }
+
 .sub-section6 {
     float: left;
 }
-#pork{
+
+#pork {
     float: left;
     margin-left: 70px;
     margin-right: 75px;
